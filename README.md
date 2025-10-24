@@ -1,6 +1,10 @@
 # LAN_ChatRoom
 一个python的局域网聊天&amp;文件传输工具
 ## 可以自定义端口在局域网内聊天
-### !!!注意此为半成品不保证功能可用!!!
-<img width="395" height="260" alt="image" src="https://github.com/user-attachments/assets/d23e5dd7-54d5-4fba-acc1-35e9cbf26b2c" />
-<img width="723" height="644" alt="image" src="https://github.com/user-attachments/assets/f52be61e-0887-4509-b9cb-5aaf9cf6e139" />
+### 功能介绍
+#### 设置界面
+在启动软件后会先进入设置，在这里你可以设置你的ID，端口
+<img width="377" height="250" alt="image" src="https://github.com/user-attachments/assets/e3a7349e-c1b2-4c6f-8677-15ae0f7a57e3" />
+#### 聊天界面（主界面）
+聊天页你可以在这里发送消息和文件
+<img width="502" height="630" alt="image" src="https://github.com/user-attachments/assets/df6a107e-09e1-402c-bbc0-1ca44255ee2c" />
