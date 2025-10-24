@@ -6,6 +6,7 @@
 在启动软件后会先进入设置，在这里你可以设置你的ID，端口
 
 <img width="377" height="250" alt="image" src="https://github.com/user-attachments/assets/e3a7349e-c1b2-4c6f-8677-15ae0f7a57e3" />
+
 #### 聊天界面（主界面）
 聊天页你可以在这里发送消息和文件
 
