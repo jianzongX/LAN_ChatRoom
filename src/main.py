@@ -189,11 +189,11 @@ class P2P_Chat_GUI:
         github_link.pack(side=tk.LEFT, padx=5)
         github_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/LAN_ChatRoom"))
 
-        license_link = Label(bottom_frame, text="开源协议", fg="black", cursor="hand2")
+        license_link = Label(bottom_frame, text="开源协议Apache License 2.0", fg="black", cursor="hand2")
         license_link.pack(side=tk.LEFT, padx=5)
         license_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/LAN_ChatRoom?tab=Apache-2.0-1-ov-file"))
 
-        dev_link = Label(bottom_frame, text="开发者(jianzongX)", fg="black", cursor="hand2")
+        dev_link = Label(bottom_frame, text="©2025 jianzongX", fg="black", cursor="hand2")
         dev_link.pack(side=tk.RIGHT, padx=5)
         dev_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX"))
 
@@ -576,4 +576,3 @@ if __name__ == "__main__":
     # 处理窗口关闭事件（确保资源清理）
     root.protocol("WM_DELETE_WINDOW", app.on_exit)
     root.mainloop()
-
