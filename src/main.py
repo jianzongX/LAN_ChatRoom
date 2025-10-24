@@ -576,3 +576,4 @@ if __name__ == "__main__":
     # 处理窗口关闭事件（确保资源清理）
     root.protocol("WM_DELETE_WINDOW", app.on_exit)
     root.mainloop()
+
