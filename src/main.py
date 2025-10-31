@@ -18,10 +18,10 @@ FILE_MSG_FLAG = b"FILE_MSG"  # 文件消息标识
 class P2P_Chat_GUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("LANChatRoom v1.0")
+        self.root.title("EasyChat v1.0")
         self.root.geometry("500x600")
         self.root.resizable(True, True)
-        
+        self.root.iconbitmap(r'image\icon.ico')
         self.running = True
         self.username = None
         self.port = None
@@ -58,6 +58,7 @@ class P2P_Chat_GUI:
         """获取用户名和端口的设置对话框"""
         dialog = tk.Toplevel(self.root)
         dialog.title("设置")
+        dialog.iconbitmap(r'image\icon.ico')
         dialog.geometry("380x220")
         dialog.resizable(False, False)
         dialog.transient(self.root)
@@ -185,13 +186,13 @@ class P2P_Chat_GUI:
         bottom_frame = tk.Frame(self.root)
         bottom_frame.pack(fill=tk.X, padx=10, pady=5)
 
-        github_link = Label(bottom_frame, text="GitHub仓库", fg="black", cursor="hand2")
+        github_link = Label(bottom_frame, text="GitHub开源", fg="black", cursor="hand2")
         github_link.pack(side=tk.LEFT, padx=5)
-        github_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/LAN_ChatRoom"))
+        github_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/EasyChat"))
 
-        license_link = Label(bottom_frame, text="开源协议Apache License 2.0", fg="black", cursor="hand2")
+        license_link = Label(bottom_frame, text="开源协议Apache License 2.0", fg="gray", cursor="hand2", font=("Arial", 8))
         license_link.pack(side=tk.LEFT, padx=5)
-        license_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/LAN_ChatRoom?tab=Apache-2.0-1-ov-file"))
+        license_link.bind("<Button-1>", lambda e: webbrowser.open_new("https://github.com/jianzongX/EasyChat?tab=Apache-2.0-1-ov-file"))
 
         dev_link = Label(bottom_frame, text="©2025 jianzongX", fg="black", cursor="hand2")
         dev_link.pack(side=tk.RIGHT, padx=5)
@@ -524,12 +525,12 @@ class P2P_Chat_GUI:
             self.transfer_frame.pack_forget()
             self.transfer_label.config(text="文件传输：无")
             self.progress_bar['value'] = 0
-        self.root.after(0, _hide)
+        self.root。after(0, _hide)
 
 
     def format_file_size(self, size_bytes):
         """格式化文件大小（B→KB→MB→GB）"""
-        units = ['B', 'KB', 'MB', 'GB']
+        units = ['B'， 'KB'， 'MB', 'GB']
         unit_idx = 0
         size = size_bytes
         while size >= 1024 and unit_idx < 3:
@@ -540,9 +541,9 @@ class P2P_Chat_GUI:
 
     def sanitize_filename(self, filename):
         """过滤文件名中的非法字符（避免保存时出错）"""
-        illegal_chars = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
-        for c in illegal_chars:
-            filename = filename.replace(c, '_')
+        illegal_chars = ['\\'， '/', ':', '*', '?', '"', '<', '>', '|']
+        for c 在 illegal_chars:
+            filename = filename.替换(c, '_')
         return filename
 
 
